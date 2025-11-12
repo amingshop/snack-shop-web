@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>零食集市 | 海阔天空 | 官网导航</title>
+    <style>
+        html, body { /* 确保html和body都铺满高度 */
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+            background-color: #fdfcff; /* 淡淡的粉紫色背景 */
+            color: #333;
+            display: grid;
+            place-items: center; /* 垂直和水平居中内容 */
+            min-height: 100vh; /* 确保铺满整个视口高度 */
+            line-height: 1.6;
+            padding: 2rem; /* 整体内边距，防止内容贴边 */
+            box-sizing: border-box; /* 确保padding不增加总高度/宽度 */
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around; /* 分散对齐，使左右两边有更大间距 */
+            width: 100%; /* 允许容器占据全部宽度 */
+            max-width: 1200px; /* 设定一个合理的全局最大宽度，防止内容过宽，但比900px宽松很多 */
+            padding: 0 2rem; /* 容器内部左右边距 */
+        }
+        .content {
+            flex-basis: 45%; /* 调整内容占据的比例 */
+            text-align: left;
+            padding-right: 2rem; /* 文本和插画之间的间距 */
+        }
+        .illustration {
+            flex-basis: 45%; /* 调整插画占据的比例 */
+            max-width: 500px; /* 适当增加插画的最大尺寸 */
+        }
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem); /* 响应式字体大小 */
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.1rem); /* 响应式字体大小 */
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: clamp(0.9rem, 2vw, 1rem); /* 响应式字体大小 */
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin: 0.25rem; /* 按钮间距 */
+            border: 2px solid transparent;
+        }
+        /* (配色方案) 模仿 lspjs.top 的粉色/紫色 */
+        .btn-primary {
+            background-color: #e83e8c; /* 鲜艳的粉色 */
+            color: white;
+            border-color: #e83e8c;
+        }
+        .btn-primary:hover {
+            background-color: #d63384;
+        }
+        
+        .footer-note {
+            font-size: clamp(0.8rem, 1.8vw, 0.9rem); /* 响应式字体大小 */
+            color: #888;
+            margin-top: 2rem;
+        }
+        
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 0 1rem; /* 移动端容器内边距 */
+            }
+            .content {
+                padding-right: 0;
+                padding-top: 2rem; /* 移动端内容顶部间距 */
+                flex-basis: auto; /* 自动调整大小 */
+            }
+            .illustration {
+                flex-basis: auto; /* 自动调整大小 */
+                max-width: 300px; /* 移动端插画最大宽度 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>零食集市 | 海阔天空</h1>
+            <p>这是项目官方地址发布页。建议您使用 Ctrl + D (Windows) 或 ⌘ + D (Mac) 在手机中将我们加入收藏夹/书签。</p>
+            
+            <div>
+                <a href="https://sys-portal-v2.shop/#/login" class="btn btn-primary" target="_blank" rel="noopener noreferrer">进入官网</a>
+                <a href="https://api-entry-01.xyz/#/login" class="btn btn-primary" target="_blank" rel="noopener noreferrer">进入官网</a>
+            </div>
+            
+            <p class="footer-note">
+                网站所有通知会通过 no-reply@gf100.top 发送。
+                您也可以在任意时刻发送任意邮件至 lingshishop@proton.me 获取最新官网地址。
+            </p>
+        </div>
+        
+        <div class="illustration">
+            <svg width="100%" height="100%" viewBox="0 0 448 344" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g><path d="M336 344c61.856 0 112-50.144 112-112S397.856 220 336 220s-112 50.144-112 112 50.144 112 112 112z" fill="#fef5f9" fill-rule="nonzero"></path><path d="M328 344c57.444 0 104-46.556 104-104s-46.556-104-104-104-104 46.556-104 104 46.556 104 104 104z" fill="#fde5f3" fill-rule="nonzero"></path><path d="M320 344c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96z" fill="#fbd8ec" fill-rule="nonzero"></path><path d="M312 344c48.598 0 88-39.402 88-88s-39.402-88-88-88-88 39.402-88 88 39.402 88 88 88z" fill="#fad0e7" fill-rule="nonzero"></path><path d="M304 344c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" fill="#f9c8e2" fill-rule="nonzero"></path><path d="M296 344c39.78 0 72-32.22 72-72s-32.22-72-72-72-72 32.22-72 72 32.22 72 72 72z" fill="#f8c0de" fill-rule="nonzero"></path><path d="M288 344c35.373 0 64-28.627 64-64s-28.627-64-64-64-64 28.627-64 64 28.627 64 64 64z" fill="#f7b9da" fill-rule="nonzero"></path><path d="M280 344c30.957 0 56-25.043 56-56s-25.043-56-56-56-56 25.043-56 56 25.043 56 56 56z" fill="#f6b1d5" fill-rule="nonzero"></path><path d="M272 344c26.542 0 48-21.458 48-48s-21.458-48-48-48-48 21.458-48 48 21.458 48 48 48z" fill="#f5abd1" fill-rule="nonzero"></path><path d="M264 344c22.127 0 40-17.873 40-40s-17.873-40-40-40-40 17.873-40 40 17.873 40 40 40z" fill="#f4a3cc" fill-rule="nonzero"></path><path d="M256 344c17.698 0 32-14.302 32-32s-14.302-32-32-32-32 14.302-32 32 14.302 32 32 32z" fill="#f39cc8" fill-rule="nonzero"></path><path d="M248 344c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24z" fill="#f294c3" fill-rule="nonzero"></path><path d="M240 344c8.822 0 16-7.178 16-16s-7.178-16-16-16-16 7.178-16 16 7.178 16 16 16z" fill="#f18cbc" fill-rule="nonzero"></path><path d="M232 344c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8z" fill="#f084b8" fill-rule="nonzero"></path><path d="M128 32C57.307 32 0 89.307 0 160s57.307 128 128 128 128-57.307 128-128S198.693 32 128 32z" fill="#E83E8C" fill-rule="nonzero"></path><path d="M112 288c-53.02 0-96-42.98-96-96 0-53.02 42.98-96 96-96s96 42.98 96 96c0 53.02-42.98 96-96 96z" fill="#D63384" fill-rule="nonzero"></path><path d="M104 288c-48.598 0-88-39.402-88-88 0-48.598 39.402-88 88-88s88 39.402 88 88c0 48.598-39.402 88-88 88z" fill="#C32E7B" fill-rule="nonzero"></path><path d="M96 288c-44.183 0-80-35.817-80-80 0-44.183 35.817-80 80-80s80 35.817 80 80c0 44.183-35.817 80-80 80z" fill="#B12A72" fill-rule="nonzero"></path><path d="M88 288c-39.78 0-72-32.22-72-72 0-39.78 32.22-72 72-72s72 32.22 72 72c0 39.78-32.22 72-72 72z" fill="#9E2568" fill-rule="nonzero"></path><path d="M80 288c-35.373 0-64-28.627-64-64 0-35.373 28.627-64 64-64s64 28.627 64 64c0 35.373-28.627 64-64 64z" fill="#8C215F" fill-rule="nonzero"></path><path d="M72 288c-30.957 0-56-25.043-56-56 0-30.957 25.043-56 56-56s56 25.043 56 56c0 30.957-25.043 56-56 56z" fill="#7A1D56" fill-rule="nonzero"></path><path d="M64 288c-26.542 0-48-21.458-48-48 0-26.542 21.458-48 48-48s48 21.458 48 48c0 26.542-21.458 48-48 48z" fill="#68184D" fill-rule="nonzero"></path><path d="M56 288c-22.127 0-40-17.873-40-40 0-22.127 17.873-40 40-40s40 17.873 40 40c0 22.127-17.873 40-40 40z" fill="#551444" fill-rule="nonzero"></path><path d="M48 288c-17.698 0-32-14.302-32-32 0-17.698 14.302-32 32-32s32 14.302 32 32c0 17.698-14.302 32-32 32z" fill="#430F3B" fill-rule="nonzero"></path><path d="M40 288c-13.255 0-24-10.745-24-24 0-13.255 10.745-24 24-24s24 10.745 24 24c0 13.255-10.745 24-24 24z" fill="#300B32" fill-rule="nonzero"></path><path d="M32 288c-8.822 0-16-7.178-16-16 0-8.822 7.178-16 16-16s16 7.178 16 16c0 8.822-7.178 16-16 16z" fill="#1E0629" fill-rule="nonzero"></path><path d="M24 288c-4.4 0-8-3.6-8-8 0-4.4 3.6-8 8-8s8 3.6 8 8c0 4.4-3.6 8-8 8z" fill="#0D021F" fill-rule="nonzero"></path><path d="M128 220a6 6 0 0 1 6 6v30h-12v-30a6 6 0 0 1 6-6z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M134 256v6a6 6 0 0 1-6 6h-12a6 6 0 0 1-6-6v-6h24z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M168 184a6 6 0 0 1 6 6v30h-12v-30a6 6 0 0 1 6-6z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M174 220v6a6 6 0 0 1-6 6h-12a6 或 6 0 0 1-6-6v-6h24z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M88 184a6 6 0 0 1 6 6v30h-12v-30a6 6 0 0 1 6-6z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M94 220v6a6 6 0 0 1-6 6h-12a6 6 0 0 1-6-6v-6h24z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M128 148a6 6 0 0 1 6 6v30h-12v-30a6 6 0 0 1 6-6z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M134 184v6a6 6 0 0 1-6 6h-12a6 6 0 0 1-6-6v-6h24z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M168 112a6 6 0 0 1 6 6v30h-12v-30a6 6 0 0 1 6-6z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M174 148v6a6 6 0 0 1-6 6h-12a6 6 0 0 1-6-6v-6h24z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M88 112a6 6 0 0 1 6 6v30h-12v-30a6 6 0 0 1 6-6z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M94 148v6a6 6 0 0 1-6 6h-12a6 6 0 0 1-6-6v-6h24z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M128 76a6 6 0 0 1 6 6v30h-12v-30a6 6 0 0 1 6-6z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M134 112v6a6 6 0 0 1-6 6h-12a6 6 0 0 1-6-6v-6h24z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M128 12c11.046 0 20 8.954 20 20s-8.954 20-20 20-20-8.954-20-20 8.954-20 20-20z" fill="#FAD0E7" fill-rule="nonzero"></path><path d="M128 0c-11.046 0-20 8.954-20 20 0 11.046 8.954 20 20 20v-40z" fill="#F9C8E2" fill-rule="nonzero"></path></g></g></svg>
+        </div>
+    </div>
+</body>
+</html>
